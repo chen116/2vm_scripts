@@ -80,5 +80,5 @@ services = [
 import subprocess
 for x in xrange(0,len(services)):
   #subprocess.call(["ls", services[x], "-l" ])
-  subprocess.call(["service", services[x], "stop" ])
-  #subprocess.call(["update-rc.d","-f", services[x], "remove" ])
+  #subprocess.call(["service", services[x], "stop" ])
+  subprocess.call(["update-rc.d","-f", services[x], "remove" ])
